@@ -1,0 +1,19 @@
+{
+  "name": "mahigo-group-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mahigo Group administration, MahigoWebs hosting, MahigoGames Scratch packaging and Mahigo Kusum API service.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@turbowarp/packager": "3.14.0",
+    "cookie-session": "2.1.0",
+    "dotenv": "16.4.7",
+    "express": "4.21.2",
+    "multer": "2.0.2"
+  }
+}

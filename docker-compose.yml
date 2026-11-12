@@ -1,0 +1,14 @@
+services:
+  mahigo-group:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      DATA_DIR: /var/lib/mahigo
+    volumes:
+      - mahigo-data:/var/lib/mahigo
+volumes:
+  mahigo-data:
